@@ -27,19 +27,19 @@ export default function Minting() {
     const [mintAmount, setMintAmount] = useState({ x: 10 })
 
     const [CONFIG, SET_CONFIG] = useState({
-        CONTRACT_ADDRESS: 'ttps://mumbai.polygonscan.com/address/0xd0420Ded10EB46d44DAA50890407600B7EB810F4',
-        SCAN_LINK: 'https://mumbai.polygonscan.com/address/0xd0420Ded10EB46d44DAA50890407600B7EB810F4',
+        CONTRACT_ADDRESS: '',
+        SCAN_LINK: '',
         NETWORK: {
-            NAME: 'Polygon Mumbai',
-            SYMBOL: 'MATIC',
-            ID: 80001,
+            NAME: '',
+            SYMBOL: '',
+            ID: 0,
         },
-        NFT_NAME: 'Angels Project',
-        SYMBOL: 'APR',
-        MAX_SUPPLY: 1111,
-        WEI_COST: 2000000000000000,
-        DISPLAY_COST: 0.002,
-        GAS_LIMIT: 285000,
+        NFT_NAME: '',
+        SYMBOL: '',
+        MAX_SUPPLY: 1,
+        WEI_COST: 0,
+        DISPLAY_COST: 0,
+        GAS_LIMIT: 0,
     })
 
     const getConfig = async () => {
