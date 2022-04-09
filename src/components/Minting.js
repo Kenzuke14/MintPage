@@ -68,7 +68,7 @@ export default function Minting() {
             toast.info('Minting will open soon.')
         } else {
             console.log('Current Wallet Supply : ', data.currentWalletSupply)
-            if (data.currentWalletSupply + mintAmount.x > data.maxMintAmountPerAddress) {
+            if (data.currentWalletSupply + mintAmount.x > data.maxMintAmountPerTx) {
                 toast.warning('You have exceeded the max limit of minting.')
             } else if (parseInt(mintAmount.x) + parseInt(data.totalSupply) > data.maxSupply) {
                 toast.warning('You have exceeded the max limit of minting.')
