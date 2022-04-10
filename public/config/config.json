@@ -1,10 +1,10 @@
 {
-    "CONTRACT_ADDRESS": "0xd0420Ded10EB46d44DAA50890407600B7EB810F4",
-    "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xd0420Ded10EB46d44DAA50890407600B7EB810F4",
+    "CONTRACT_ADDRESS": "0x000ad153428b0FE63c08065Cb936996794304370",
+    "SCAN_LINK": "https://polygonscan.com/address/0x000ad153428b0fe63c08065cb936996794304370",
     "NETWORK": {
-        "NAME": "Mumbai",
+        "NAME": "Polygon",
         "SYMBOL": "MATIC",
-        "ID": 80001
+        "ID": 137
     },
     "NFT_NAME": "Angels Project",
     "SYMBOL": "APR",
