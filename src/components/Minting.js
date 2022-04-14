@@ -170,7 +170,7 @@ export default function Minting() {
                             backgroundColor: '#B4C4CE',
                         },
                         active: {
-                            backgroundColor: '#1A1B1C',
+                            backgroundColor: 'red',
                         },
                     }}
                     disabled={!data.loading && blockchain.smartContract !== null ? false : true}
@@ -181,7 +181,7 @@ export default function Minting() {
                     <button
                         className={
                             (data.paused ? 'bg-gray-300 cursor-not-allowed' : 'bg-white hover:bg-gray-300') +
-                            ' text-2xl px-28 py-2 rounded-xl  border-4 border-gray-800 transition-all duration-200 ease-in-out'
+                            ' text-2xl px-28 py-2 rounded-xl  border-4 border-red text-red transition-all duration-200 ease-in-out'
                         }
                         onClick={(e) => {
                             claimNFTs()
@@ -194,7 +194,7 @@ export default function Minting() {
 
                 {blockchain.account === '' || blockchain.smartContract === null ? (
                     <button
-                        className="text-2xl px-28 py-2 rounded-xl bg-white border-4 border-gray-800 hover:bg-gray-300 transition-all duration-200 ease-in-out"
+                        className="text-2xl px-28 py-2 rounded-xl font-raleway text-white bg-red border-4 border-red hover:bg-white hover:border-red-800 hover:text-red transition-all duration-200 ease-in-out"
                         onClick={(e) => {
                             e.preventDefault()
                             dispatch(connect())
