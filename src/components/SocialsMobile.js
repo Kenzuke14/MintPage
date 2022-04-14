@@ -28,7 +28,7 @@ export default function SocialsMobile() {
                         />
                     </svg>
                 </a>
-                <a href="https://twitter.com/AngelsPrj_NFT/" target='_blank' rel="noreferrer">
+                <a href="https://twitter.com/AngelsProj_NFT/" target='_blank' rel="noreferrer">
                     <svg width="30" viewBox="0 0 47 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             fillRule="evenodd"
