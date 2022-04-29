@@ -64,9 +64,6 @@ export default function Minting() {
         let gasLimit = CONFIG.GAS_LIMIT
         let totalCostWei = String(cost * mintAmount.x)
 
-        if (data.paused) {
-            toast.info('Minting will open soon.')
-        } else {
             console.log('Current Wallet Supply : ', data.currentWalletSupply)
             if (data.currentWalletSupply + mintAmount.x > data.maxMintAmountPerTx) {
                 toast.warning('You have exceeded the max limit of minting.')
@@ -79,7 +76,7 @@ export default function Minting() {
                     return mintTokens(gasLimit, totalCostWei)
                 }
             }
-        }
+        
     }
 
     const whitelistMintTokens = (gasLimit, totalCostWei) => {
@@ -180,7 +177,6 @@ export default function Minting() {
                 {!data.loading && blockchain.smartContract !== null ? (
                     <button
                         className={
-                             
                             ' text-2xl px-28 py-2 rounded-xl  border-4 border-red text-red transition-all duration-200 ease-in-out'
                         }
                         onClick={(e) => {
