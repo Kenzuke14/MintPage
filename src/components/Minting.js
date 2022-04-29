@@ -180,13 +180,12 @@ export default function Minting() {
                 {!data.loading && blockchain.smartContract !== null ? (
                     <button
                         className={
-                            (data.paused ? 'bg-gray-300 cursor-not-allowed' : 'bg-white hover:bg-gray-300') +
+                             
                             ' text-2xl px-28 py-2 rounded-xl  border-4 border-red text-red transition-all duration-200 ease-in-out'
                         }
                         onClick={(e) => {
                             claimNFTs()
                         }}
-                        disabled={data.paused ? true : false}
                     >
                         Mint {mintAmount.x}
                     </button>
