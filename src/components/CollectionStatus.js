@@ -25,8 +25,8 @@ export default function CollectionStatus() {
             <AnimatePresence>
                 {!data.loading && blockchain.smartContract !== null ? (
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                        <h1 className="text-4xl font-bold uppercase tracking-wider">WHITELIST MINT LIVE</h1>
-                        <h4 className="mt-6 text-xl">{data.cost > 0 ? web3.utils.fromWei(data.cost.toString(), 'ether') + ' MATIC' : 'Free'} Mint</h4>
+                        <h1 className="text-4xl font-bold uppercase tracking-wider">Mint Is {data.paused ? 'Paused' : 'Live'}</h1>
+                        <h4 className="mt-6 text-xl">{data.cost > 0 ? web3.utils.fromWei(data.cost.toString(), 'ether') + ' MATIC' : 'Free'} Mint Price</h4>
                         <h4 className="mt-2 text-xl">Max {data.maxMintAmountPerTx} Per Address</h4>
                     </motion.div>
                 ) : (
