@@ -16,7 +16,7 @@ export default function CollectionStatus() {
                     <div className="bg-gray-800 rounded-full px-6 py-1 text-gray-200 inline-block font-semibold text-sm uppercase">
                         <div className="flex items-center">
                             <span className="rounded-full w-3 h-3 bg-green-400 inline-block"></span>
-                            <span className="ml-2">{data.isWhitelistMintEnabled ? 'Whitelist Mint' : 'Public Mint'}</span>
+                            <span className="ml-2">{data.isWhitelistMintEnabled ? 'Whitelist Mint' : 'PRESALE'}</span>
                         </div>
                     </div>
                 </div>
